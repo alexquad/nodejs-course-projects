@@ -1,0 +1,19 @@
+<%- include('layouts/head.ejs') %>
+</head>
+<body>
+    <main>
+        <% if(users.length > 0) { %>
+            <ul>
+                <% users.forEach(user => { %>
+                    <li><%=user.name%></li>
+                <% }) %>
+            </ul>
+        <% } else { %>
+            <h1>No items found</h1>
+        <% } %>
+    </main>
+    
+
+    <a href="/">Main Page</a>
+</body>
+</html>
